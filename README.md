@@ -72,7 +72,7 @@ This leaves us with an image containing exactly the sudoku puzzle which can then
     
     ![Digit Template Ready](https://github.com/tusharsircar95/SudokuVision/blob/master/Images/digitTemplateFormed.JPG)
 
-  - Also, to check whether a given cell is blank, we pick a square in the center of the image (after step (a))and check whether the number of white pixels are less than a certain threshold, if yes, then the cell is marked as blank. Alternatively, we can even check if the percentage of white pixels in the biggest component is less than a certain threshold or not. Value of this threshold was obviously found experimentally.
+  - Also, to check whether a given cell is blank, we pick a square in the center of the image (after the first step) and check whether the number of white pixels are less than a certain threshold, if yes, then the cell is marked as blank. Alternatively, we can even check if the percentage of white pixels in the biggest component is less than a certain threshold or not. Value of this threshold was obviously found experimentally.
  
 - Once all digits are recognized we pass the sudoku grid into the solveSudoku function which sovles it via backtracking and returns the solution
   
